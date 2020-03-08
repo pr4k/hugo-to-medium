@@ -1,0 +1,13 @@
+# action.yml
+name: 'Hugo to Medium'
+description: 'Pushes your blog from hugo to medium' 
+inputs:
+  blog-dir:  # id of input
+    description: 'Directory for blog content'
+    required: true
+    default: 'content'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.blog-dir }}
