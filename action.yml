@@ -4,8 +4,6 @@ description: 'Pushes your blog from hugo to medium'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.blog-dir }}
 branding:
   icon: 'aperture'
   color: 'gray-dark'
